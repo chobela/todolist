@@ -39,7 +39,7 @@ public class DBDataInitializer implements CommandLineRunner {
         Item item3 = new Item();
         item3.setId("3");
         item3.setName("Pack my bags");
-        item3.setDescription("Pack my bags for the trip");
+        item3.setDescription("Pack bags for the trip");
         item3.setDone(false);
 
          itemRepository.save(item1);
