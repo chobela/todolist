@@ -56,7 +56,7 @@ public class ItemController {
 
     }
 
-    @PutMapping
+    @PatchMapping("/{itemId}")
     public Result updateItem(@PathVariable String itemId, @Valid @RequestBody ItemDto itemDto) {
 
         Item item = this.itemDtoToItemConverter.convert(itemDto);
