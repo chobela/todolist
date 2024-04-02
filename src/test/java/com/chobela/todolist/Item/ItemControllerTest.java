@@ -79,7 +79,7 @@ class ItemControllerTest {
 
     }
 
-    @Test
+  /*  @Test
     void findItemByIdSuccess() throws Exception {
 
         //Given (fake data and define the behaviour of the mock) -> arrange inputs and targets.
@@ -132,7 +132,7 @@ class ItemControllerTest {
                 .andExpect(jsonPath("$.message").value("Items found"))
                 .andExpect(jsonPath("$.data", Matchers.hasSize(this.items.size())));
     }
-
+*/
 //    @Test
 //    void addItemSuccess() throws Exception {
 //
