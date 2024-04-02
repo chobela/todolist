@@ -70,9 +70,10 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(authorizeHttpRequests ->
                         authorizeHttpRequests
                                 .requestMatchers(HttpMethod.GET, this.baseUrl + "/items/**").permitAll()
+                                .requestMatchers(HttpMethod.PATCH, this.baseUrl + "/items/**").hasAuthority("ROLE_user")
                                 .requestMatchers(HttpMethod.GET, this.baseUrl + "/users/**").hasAuthority("ROLE_admin")
                                 .requestMatchers(HttpMethod.POST, this.baseUrl + "/users").hasAuthority("ROLE_admin")
-                                .requestMatchers(HttpMethod.PUT, this.baseUrl + "/users/**").hasAuthority("ROLE_admin")
+                                .requestMatchers(HttpMethod.PATCH, this.baseUrl + "/users/**").hasAuthority("ROLE_admin")
                                 .requestMatchers(HttpMethod.DELETE, this.baseUrl + "/users/**").hasAuthority("ROLE_admin")
                                 .requestMatchers(AntPathRequestMatcher.antMatcher("/h2-console/**")).permitAll()
                                 // Disallow everything else.

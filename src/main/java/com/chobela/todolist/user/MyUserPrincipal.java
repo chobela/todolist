@@ -41,6 +41,10 @@ public class MyUserPrincipal implements UserDetails {
         return true;
     }
 
+    public TodoUser getTodoUser() {
+        return todoUser;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
 

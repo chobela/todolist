@@ -56,8 +56,7 @@ public class UserController {
         return new Result(true, StatusCode.SUCCESS, "Add Success", savedUserDto);
     }
 
-
-    @PutMapping("/{userId}")
+    @PatchMapping("/{userId}")
     public Result updateUser(@PathVariable Integer userId, @Valid @RequestBody UserDto userDto) {
         TodoUser update = this.userDtoToUserConverter.convert(userDto);
         TodoUser updatedTodoUser = this.userService.update(userId, update);
