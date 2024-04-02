@@ -7,7 +7,7 @@
 ## Frontend Setup
 2. Navigate to the frontend directory to install dependencies
    ```
- npm install
+   npm install
 
 ## Logging In
   ```
