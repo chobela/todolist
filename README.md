@@ -10,6 +10,7 @@
 ## Frontend Setup
 2. Navigate to the frontend directory to install dependencies
    ```
+   https://github.com/chobela/todo_frontend
    npm install
 
 ## Logging In
