@@ -29,17 +29,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 class ItemControllerTest {
 
-    @Configuration
-    static class TestConfig {
-        // Define any necessary bean configurations for testing
-        @Bean
-        public MyConfigurationProperties myConfigurationProperties() {
-            MyConfigurationProperties properties = new MyConfigurationProperties();
-            properties.setSomeProperty("testValue");
-            return properties;
-        }
-    }
-
     @Autowired
     MockMvc mockMvc;
 
