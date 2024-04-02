@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "spring.api.endpoint.base-url",
+      "type": "java.lang.String",
+      "description": "Description for spring.api.endpoint.base-url."
+    },
+    {
+      "name": "spring.api.endpoint.base_url",
+      "type": "java.lang.String",
+      "description": "Description for spring.api.endpoint.base_url."
+    }
+  ] }

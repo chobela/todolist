@@ -1,7 +1,9 @@
 package com.chobela.todolist.system;
 
-import com.chobela.todolist.Item.Item;
 import com.chobela.todolist.Item.ItemRepository;
+import com.chobela.todolist.user.TodoUser;
+import com.chobela.todolist.user.UserRepository;
+import com.chobela.todolist.user.UserService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -9,12 +11,13 @@ import org.springframework.stereotype.Component;
 public class DBDataInitializer implements CommandLineRunner {
 
     private final ItemRepository itemRepository;
+    private final UserService userService;
 
     //constructor
-    public DBDataInitializer(ItemRepository itemRepository) {
+    public DBDataInitializer(ItemRepository itemRepository, UserService userService) {
         this.itemRepository = itemRepository;
+        this.userService = userService;
     }
-
 
     @Override
     public void run(String... args) throws Exception {
@@ -41,8 +44,14 @@ public class DBDataInitializer implements CommandLineRunner {
 //         itemRepository.save(item1);
 //         itemRepository.save(item2);
 //         itemRepository.save(item3);
+            TodoUser user1 = new TodoUser();
 
+            user1.setName("Chobela Kakumbi");
+            user1.setUsername("chobela");
+            user1.setPassword("123456");
+            user1.setRoles("admin user");
 
+            userService.save(user1);
 
     }
 }
