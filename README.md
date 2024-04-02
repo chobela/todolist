@@ -14,6 +14,8 @@
   Username: chobela
   Password: 123456
 
-![todologin](https://github.com/chobela/todolist/assets/16720694/28a9c744-23aa-4ed6-8c13-e340b9fb9dbf)
-![todolist](https://github.com/chobela/todolist/assets/16720694/d0dce7be-8de3-422a-bdda-e8d857ebb8bd)
+  ```
+  ![todologin](https://github.com/chobela/todolist/assets/16720694/9e8c78b3-b266-4fbe-baef-f76f9989439f)
+  ![todolist](https://github.com/chobela/todolist/assets/16720694/fe4d3d0e-71cf-41e6-8aea-0236e10379f4)
+
 
